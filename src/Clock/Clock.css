@@ -1,0 +1,92 @@
+.clock__container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 50px;
+}
+
+.clock__body {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 10px;
+  margin: 0 0 10px;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.clock__body:nth-of-type(2), .clock__body:nth-of-type(3), .clock__body:nth-of-type(5) {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.clock__body:nth-of-type(4) {
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+}
+
+.clock__seconds {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #4b4b4b;
+  background: grey;
+}
+
+.clock__seconds.active {
+  background: orange;
+}
+
+.clock__five--hours {
+  background: grey;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #4b4b4b;
+}
+
+.clock__five--hours.active {
+  background: red;
+}
+
+.clock__one--hour {
+  background: grey;
+  height: 50px;
+  border: 1px solid #4b4b4b;
+  width: 100%;
+}
+
+.clock__one--hour.active {
+  background: red;
+}
+
+.clock__five--minutes {
+  background: grey;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #4b4b4b;
+}
+
+.clock__five--minutes--3 {
+  background: grey;
+  height: 50px;
+  border: 1px solid #4b4b4b;
+}
+
+.clock__five--minutes--3.active {
+  background: red !important;
+}
+
+.clock__five--minutes.active {
+  height: 50px;
+  background: orange;
+}
+
+.clock__one--minute {
+  background: grey;
+  height: 50px;
+  border: 1px solid #4b4b4b;
+  width: 100%;
+}
+
+.clock__one--minute.active {
+  background: orange;
+}
+/*# sourceMappingURL=Clock.css.map */
